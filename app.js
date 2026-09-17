@@ -1,0 +1,1 @@
+function publish(e){e.preventDefault();const t=document.getElementById('title').value;const p=document.getElementById('price').value;document.getElementById('msg').textContent=`تم تجهيز منشور «${t}» بسعر ${p}. النسخة الحالية واجهة تجريبية؛ ربط قاعدة البيانات وتسجيل الدخول يتم بالمرحلة التالية.`;document.getElementById('msg').style.color='#4d63e9';}

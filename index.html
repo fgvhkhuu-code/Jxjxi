@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سوقي — حسابات ومنشورات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">سوقي</div>
+  <nav><a href="#home">الرئيسية</a><a href="#profile">حسابي</a><a href="#new">نشر</a></nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div>
+      <span class="badge">منصة نشر وعروض</span>
+      <h1>انشر منتجاتك وأسعارك<br><span>برابط حساب مباشر.</span></h1>
+      <p>صفحة بسيطة وسريعة لعرض الصور، الأسعار، والعروض مع يوزر خاص لكل حساب.</p>
+      <a class="btn" href="#new">ابدأ بالنشر</a>
+    </div>
+    <div class="preview">
+      <div class="avatar">أ</div>
+      <b>@abu_shiba</b>
+      <small>حساب موثوق • 24 منشور</small>
+      <div class="stats"><span><b>24</b> منشور</span><span><b>1.2K</b> مشاهدة</span></div>
+      <a class="profile-link" href="#profile">site.com/@abu_shiba</a>
+    </div>
+  </section>
+
+  <section class="section" id="profile">
+    <div class="profile-head">
+      <div class="avatar big">أ</div>
+      <div><h2>أبو شيبة</h2><p>@abu_shiba</p></div>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="photo">صورة العرض</div><h3>عرض خاص</h3><strong>5,000 د.ع</strong><button>تفاصيل</button></article>
+      <article class="card"><div class="photo">صورة المنتج</div><h3>منتج جديد</h3><strong>10,000 د.ع</strong><button>تفاصيل</button></article>
+      <article class="card"><div class="photo">صورة الخدمة</div><h3>خدمة مميزة</h3><strong>15,000 د.ع</strong><button>تفاصيل</button></article>
+    </div>
+  </section>
+
+  <section class="section form-section" id="new">
+    <h2>إنشاء منشور</h2>
+    <form onsubmit="publish(event)">
+      <input id="title" required placeholder="عنوان المنشور">
+      <input id="price" required placeholder="السعر">
+      <textarea id="desc" placeholder="وصف مختصر"></textarea>
+      <input id="image" type="file" accept="image/*">
+      <button class="btn" type="submit">نشر الآن</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+</main>
+<footer>© 2026 سوقي — نموذج أولي قابل للتطوير</footer>
+<script src="app.js"></script>
+</body>
+</html>
